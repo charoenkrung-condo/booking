@@ -30,7 +30,7 @@
     <div class="container justify-content-center justify-content-md-start">
       <span class="navbar-brand d-flex align-items-center fw-bold">
         <img src="https://img2.pic.in.th/54efe3a2-1f49-4c73-a5ca-b22ef056efa1.png" alt="Logo" class="logo-img">
-        ระบบจองคิวที่จอดรถ (Waiting List)
+        ระบบจองคิวที่จอดรถ
       </span>
     </div>
   </nav>
@@ -43,7 +43,7 @@
           <form id="bookingForm" onsubmit="event.preventDefault(); submitBooking();">
             <div class="mb-3">
               <label class="form-label">ทะเบียนรถ <span class="text-danger">*</span></label>
-              <input type="text" id="bPlate" class="form-control" placeholder="กข1234" required oninput="this.value = this.value.replace(/\s+/g, '').toUpperCase()">
+              <input type="text" id="bPlate" class="form-control" placeholder="ไม่ต้องเว้นวรรค" required oninput="this.value = this.value.replace(/\s+/g, '').toUpperCase()">
             </div>
             <div class="mb-3">
               <label class="form-label">ประเภทรถ</label>
@@ -62,7 +62,7 @@
             </div>
             <div class="mb-4">
               <label class="form-label">ห้อง <span class="text-danger">*</span></label>
-              <input type="text" id="bRoom" class="form-control" placeholder="เช่น 101/55" required>
+              <input type="text" id="bRoom" class="form-control" placeholder="เช่น 630/16" required>
             </div>
             <button type="submit" class="btn btn-primary w-100 btn-submit fw-bold shadow">ยืนยันการจองคิว</button>
           </form>
@@ -89,7 +89,6 @@
               </tbody>
             </table>
           </div>
-          <p class="text-center text-muted small mt-3">* ข้อมูลจะอัปเดตอัตโนมัติทุก 30 วินาที</p>
         </div>
       </div>
     </div>
